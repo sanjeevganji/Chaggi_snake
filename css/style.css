@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.bg1 {
+  background-image: url(../bg_images/1.png);
+}
+.bg2 {
+  background-image: url(../bg_images/2.png);
+}
+.bg3 {
+  background-image: url(../bg_images/3.png);
+}
+.bg4 {
+  background-image: url(../bg_images/4.png);
+}
+.bg5 {
+  background-image: url(../bg_images/5.jpg);
+}
+.bg6 {
+  background-image: url(../bg_images/6.jpg);
+}
+.bg7 {
+  background-image: url(../bg_images/7.png);
+}
+.bg8 {
+  background-image: url(../bg_images/8.jpg);
+}
+.bg9 {
+  background-image: url(../bg_images/9.jpg);
+}
+.bg10 {
+  background-image: url(../bg_images/10.png);
+}
+.body {
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Logo {
+  position: absolute;
+  top: 9px;
+  left: 100px;
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "Gloria Hallelujah", serif;
+}
+
+#scoreBox {
+  position: absolute;
+  top: 9px;
+  right: 200px;
+  font-size: 39px;
+  font-weight: 400;
+  font-family: "Press Start 2P", serif;
+}
+
+#hiscoreBox {
+  position: absolute;
+  top: 59px;
+  right: 140px;
+  font-size: 39px;
+  font-weight: 400;
+  font-family: "Press Start 2P", serif;
+}
+
+#board {
+  background-color: black;
+  opacity: 0.7;
+  width: 90vmin;
+  height: 92vmin;
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: repeat(40, 1fr);
+  grid-template-columns: repeat(40, 1fr);
+}
+
+.head {
+  opacity: 1;
+  background-color: red;
+  background-image: url(../graphics/head.png);
+  transform: scale(1.02);
+  border-radius: 0.5rem;
+}
+
+.snake {
+  opacity: 1;
+  background-color: rgb(245, 138, 38);
+  border-radius: 0.8rem
+}
+.tail {
+  background-color: yellow;
+  opacity: 1;
+  border-radius: 0.8rem;
+}
+
+.food {
+  opacity: 1;
+  background: green;
+  border: 0.25vmin solid black;
+  border-radius: 8px;
+}
