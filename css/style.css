@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
 }
+
 .bg1 {
   background-image: url(../bg_images/1.png);
 }
@@ -34,7 +35,6 @@
 .bg10 {
   background-image: url(../bg_images/10.png);
 }
-
 .body {
   min-height: 100vh;
   background-size: 100vw 100vh;
@@ -43,7 +43,6 @@
   justify-content: center;
   align-items: center;
 }
-
 #Logo {
   position: absolute;
   top: 9px;
@@ -53,7 +52,7 @@
   font-family: "Gloria Hallelujah", serif;
 }
 
-#score {
+#scoreBox {
   position: absolute;
   top: 9px;
   right: 200px;
@@ -62,7 +61,7 @@
   font-family: "Press Start 2P", serif;
 }
 
-#hiscore {
+#hiscoreBox {
   position: absolute;
   top: 59px;
   right: 140px;
@@ -72,43 +71,38 @@
 }
 
 #board {
-  background: black;
-  opacity: 70%;
+  background-color: black;
+  opacity: 0.7;
   width: 90vmin;
   height: 92vmin;
   border: 2px solid black;
   display: grid;
-  grid-template-rows: repeat(18, 1fr);
-  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(40, 1fr);
+  grid-template-columns: repeat(40, 1fr);
 }
 
 .head {
-  /* background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
-    border: 2px solid rgb(34, 4, 34); 
-    transform: scale(1.02);
-    border-radius: 9px; */
-    background: url("../graphics/head.png");
+  opacity: 1;
   background-color: red;
+  background-image: url(../graphics/head.png);
+  transform: scale(1.02);
+  border-radius: 0.5rem;
 }
 
 .snake {
-  /* background-color: purple;
-    border: .25vmin solid white;
-    border-radius: 12px; */
-  background: url("../graphics/body.png");
-  background-color: orange;
-
+  opacity: 1;
+  background-color: rgb(245, 138, 38);
+  border-radius: 0.8rem
 }
-
 .tail {
-  background: url("../graphics/tail.png");
   background-color: yellow;
+  opacity: 1;
+  border-radius: 0.8rem;
 }
 
 .food {
-  /* background: linear-gradient(red, purple);
-    border: .25vmin solid black;
-    border-radius: 8px; */
-  background: url("../img/coin.png");
-  background-color: rgb(41, 128, 0);
+  opacity: 1;
+  background: green;
+  border: 0.25vmin solid black;
+  border-radius: 8px;
 }
