@@ -86,6 +86,7 @@ function gameEngine() {
     ];
     musicSound.play();
     score = 0;
+    speed=5;
   }
 
   // Increment the score and regenerate the food
