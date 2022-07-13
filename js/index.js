@@ -43,7 +43,7 @@ function main(currtime) {
   gameEngine();
 }
 
-function isCollide(SAR) {
+function Collision(SAR) {
   // If you bump into yourself
   for (let i = 1; i < snakeArray.length; i++) {
     if (SAR[i].x === SAR[0].x && SAR[i].y === SAR[0].y) {
@@ -69,7 +69,7 @@ function gameEngine() {
   highscoresound.volume = volume;
 
   // Updating the snake array & Food
-  if (isCollide(snakeArray)) {
+  if (Collision(snakeArray)) {
     gameOverSound.play();
     musicSound.pause();
     inputDir = {
